@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>VirteX</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">VirteX</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desarrollo">Desarrollo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+            <a href="login.html" class="btn btn-outline-primary ms-3">
+                <img src="./14.png" alt="Login" width="30">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./10.png" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./12.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+            <img src="./11.png" class="d-block w-100" alt="Imagen 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <div class="text-center">
+        <h2 class="fw-bold">VirtX: Explora, aprende y conecta sin límites.</h2>
+        <h3>
+        <p class="lead">
+            <br>
+            VirtX nace como consecuencia de la problemática latente sobre la necesidad de buscar una transición
+            de los métodos convencionales de enseñanza hacia una coexistencia con las tecnologías inmersivas.
+            <br> <br>
+            Es así como se desarrolla VirtX, con el propósito de responder a esta necesidad mediante el uso de realidad
+            virtual y la creación de entornos adaptados a la digitalización, ofreciendo un método interactivo, inclusivo
+            y que fomente una mayor participación y compromiso por parte de los usuarios.
+            <br> <br>
+            VirtX surge como solución a la falta de aplicaciones enfocadas en los sectores de educación, cultura y organizaciones,
+            empleando la realidad virtual como método de innovación y transformación digital, con el objetivo de desarrollar una
+            aplicación basada en la realidad virtual que permita la enseñanza por medio de experiencias inmersivas.
+        </p>
+        </h3>
+
+    </div>
+
+    <hr>
+
+    <h3 class="text-center" id="productos">Nuestros productos</h3>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./10.png" class="card-img-top" alt="Cultural">
+                <div class="card-body">
+                    <h5 class="card-title">Cultural</h5>
+                    <p class="card-text">San Juan de Ulúa, La Venta</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./10.png" class="card-img-top" alt="Educación">
+                <div class="card-body">
+                    <h5 class="card-title">Educación</h5>
+                    <p class="card-text">Muy pronto...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./10.png" class="card-img-top" alt="Empresas">
+                <div class="card-body">
+                    <h5 class="card-title">Empresas</h5>
+                    <p class="card-text">Muy pronto...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 class="text-center" id="desarrollo">Nuestro desarrollo</h3>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="descarga.pdf" download>
+                    <img src="./10.png" class="card-img-top" alt="Casos de uso">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Casos de uso</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./12.jpg" class="card-img-top" alt="Diagrama de clases">
+                <div class="card-body">
+                    <h5 class="card-title">Diagrama de clases</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./13.png" class="card-img-top" alt="Diagrama de secuencia">
+                <div class="card-body">
+                    <h5 class="card-title">Diagrama de secuencia</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    <p class="mb-1">Contáctanos</p>
+    <p>@facebook | @instagram</p>
+    <p class="mb-0">© 2025 Bit Byte Kilobyte</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
