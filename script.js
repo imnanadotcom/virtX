@@ -42,10 +42,10 @@ document.querySelector(".next").addEventListener("click", function () {
 });
 
 // Reiniciar el auto-movimiento cuando el usuario interactúa
-/*
+
 function resetAutoSlide() {
     clearInterval(autoSlide);
     autoSlide = setInterval(autoMove, 3000);
-    */
+
 }
 
