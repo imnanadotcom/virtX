@@ -1,0 +1,350 @@
+/* Archivo CSS separado: styles.css */
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+}
+
+body {
+  background-color: #EEEEEE;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header superior estilo barra */
+.header-bar {
+  position: absolute; /* Para que esté sobre el carrusel */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Estilos del logo
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+*/
+
+/* Menú de navegación */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #f0a500; /* Cambia de color al pasar el mouse */
+}
+
+/* Íconos de usuario (Login, Menú, etc.) */
+.user-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.user-icons img {
+  padding: 10px;
+  width: 90px;
+  height: 70px;
+  cursor: pointer;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .user-icons {
+    margin-top: 5px;
+  }
+}
+
+
+
+/* Contenido principal */
+.content {
+  padding: 2rem;
+  flex: 1;
+}
+
+.description {
+  margin-bottom: 2rem;
+  text-align: justify-all;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: space-between; /* Espaciado uniforme */
+  gap: 20px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Hace que se ajusten en pantallas pequeñas */
+}
+
+.nuestros-productos {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1; /* Hace que ocupe el mismo espacio que los demás elementos */
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 2; /* Ocupará más espacio que el título */
+}
+
+/* RESPONSIVE: Se colocarán uno debajo del otro en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+.categorias {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* Estilos para las categorías */
+.category {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.place-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  min-width: 200px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.place-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0.5rem;
+}
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .place-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Estilos del pie de página */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #134374;
+  color: white;
+  margin-top: auto;
+}
+
+footer span {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+  .places {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Estilos para la imagen de la sección hero */
+  .principal {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .principal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nuestro-desarrollo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .custom-separator {
+    width: 99%; /* ✅ Ajusta el porcentaje según el ancho deseado */
+    margin: 2rem auto; /* ✅ Centra la línea y agrega espacio arriba y abajo */
+    border: none;
+    height: 3.5px;
+    background-color: #ccc; /* ✅ Color de la línea */
+    border-radius: 10px;
+  }
+
+  .contactanos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  .social {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  .derechoos {
+    font-size: 0.3px; /* ✅ Ajusta el tamaño de fuente más pequeño */
+    font-weight: min(1);
+    margin-top: auto; /* ✅ Asegura que el texto se mantenga en la parte inferior */
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .derechoos span {
+    display: block;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    height: 700px; /* Misma altura que la imagen principal */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Se ajustará dinámicamente en JS */
+    height: 100%;
+  }
+
+  .carousel img {
+    width: 100vw;  /* Cada imagen ocupa toda la pantalla */
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+
+
+
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+
+  .btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .seccioness {
+    text-align: center;  /* Centra el texto */
+    font-size: 60px;  /* Ajusta el tamaño del texto */
+    font-weight: bold;  /* Hace que el texto sea más grueso */
+    margin: 20px 0;  /* Agrega espacio arriba y abajo */
+    color: #333;  /* Ajusta el color si es necesario */
+  }
+
+  .slogan {
+    text-align: center;  /* Centra el texto */
+    font-size: 100px;  /* Ajusta el tamaño del texto */
+    font-weight: bold;  /* Hace que el texto sea más grueso */
+    margin: 10px 0;  /* Agrega espacio arriba y abajo */
+    color: #333;  /* Ajusta el color si es necesario */
+  }
+
+
+
+}
