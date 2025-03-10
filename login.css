@@ -1,0 +1,52 @@
+/* Ajustes generales */
+body {
+    background: linear-gradient(to right, red, #3b82f6);
+}
+
+/* Tarjeta de inicio de sesión */
+.card {
+    border-radius: 10px;
+}
+
+/* Título */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Botón */
+.btn-primary {
+    background-color: #134374;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: red;
+}
+
+/* Enlace de registro */
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
