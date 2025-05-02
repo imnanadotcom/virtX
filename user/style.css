@@ -4,7 +4,7 @@
     border-radius: 5px;
     margin-top: 20px;
 }
-.user-info-title {
+.section-title {
     color: #007bff;
     font-weight: bold;
     margin-bottom: 15px;
@@ -15,4 +15,38 @@
 .user-info-label {
     font-weight: bold;
     margin-right: 5px;
+}
+.navbar-nav .nav-link {
+    color: #0a008e !important;
+    font-weight: bold !important;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #f0a500 !important;
+  }
+  
+
+.forms-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.delete-account-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #dc3545; 
+}
+
+.delete-account-button {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.delete-account-button:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
 }

@@ -18,20 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
 
+
         
   
         const data = await response.json();
   
         if (response.ok ) {
           window.location.href = 'login.html';
-        } else {
-          // Mostrar mensaje de error
-          loginErrorDiv.textContent = data.message || 'Error al registrar el usuario';
+        } else{
+          loginErrorDiv.textContent = data || "Error al registrar el usuario";
           loginErrorDiv.style.display = 'block';
         }
       } catch (error) {
-        console.error('Error en el registro:', error);
-        loginErrorDiv.textContent = 'Error de conexión con el servidor.';
+        loginErrorDiv.textContent = 'Error al registrar el usuario';
         loginErrorDiv.style.display = 'block';
       }
     });

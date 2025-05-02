@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // Actualizar los elementos HTML con los datos del usuario recibidos de la API
             document.getElementById("user-name").textContent = userData.name || "No disponible";
             document.getElementById("user-email").textContent = userData.email || "No disponible";
-            document.getElementById("user-role").textContent = userData.role || "No disponible";
         })
         .catch(error => {
             console.error('Error al obtener los datos del usuario:', error);
