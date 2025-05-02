@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otra Página | VirtX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="/user/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="virtX Logo" height="40" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#desarrollo">Desarrollo</a></li>
+                </ul>
+                <a class="btn btn-outline-primary ms-3" id="sesion">
+                    <img src="/images/34.png" alt="Cerrar Sesion" width="30">
+                </a>
+                <a href="/index.html" class="btn btn-outline-primary ms-3">
+                    <img src="/images/33.png" alt="Volver a Inicio" width="30">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <div class="container mt-5">
+        <div class="user-info-section mt-4">
+            <h2 class="user-info-title">Información del Usuario</h2>
+            <p class="user-info-item"><span class="user-info-label">Nombre:</span> <span id="user-name">Cargando...</span></p>
+            <p class="user-info-item"><span class="user-info-label">Email:</span> <span id="user-email">Cargando...</span></p>
+            <p class="user-info-item"><span class="user-info-label">Rol:</span> <span id="user-role">Cargando...</span></p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p class="mb-0">© 2025 Bit Byte Kilobyte</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="getUserInfo.js"></script>
+    <script src="closeSession.js"></script>
+
+</body>
+</html>

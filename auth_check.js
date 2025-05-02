@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const userInfoItem = document.createElement('a');
                 userInfoItem.classList.add('dropdown-item');
                 // Vista de la Informacion del usuario
-                userInfoItem.href = 'user/UserInfo.html';
+                userInfoItem.href = 'user/account.html';
                 userInfoItem.textContent = 'Información del Usuario';
 
                 submenu.appendChild(logoutItem);
