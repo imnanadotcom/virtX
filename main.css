@@ -77,3 +77,9 @@ footer {
   text-align: center;
   margin-top: auto;
 }
+
+.mission-section .card {
+  border: none;
+  box-shadow: none; /* Optional: remove shadow if it looks like a border */
+}
+
