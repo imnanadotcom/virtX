@@ -83,3 +83,29 @@ footer {
   box-shadow: none; /* Optional: remove shadow if it looks like a border */
 }
 
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #444;
+  padding: 0 1rem 1rem;
+}
+
+.mission-section .card {
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.mission-section .card:hover {
+  transform: translateY(-5px);
+}
+
